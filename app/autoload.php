@@ -1,7 +1,7 @@
 <?php
-    
+
+    require 'app/Config.php';
     require 'app/Controller.php';
-	require 'app/Model.php';
 	require 'app/Router.php';
 	
 	spl_autoload_register(function (string $className){

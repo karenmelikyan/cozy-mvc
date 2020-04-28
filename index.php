@@ -3,4 +3,4 @@
  require __DIR__ . '/app/autoload.php';
 
  /** to define controller & action for home page */
- (new Router('SiteController', 'actionIndex'))->run();
+ (new Router('UserController', 'actionIndex'))->run();
