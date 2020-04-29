@@ -11,6 +11,7 @@ class UserController extends Controller
 
      public function actionAdmin()
      {
+         /** show all data from database */
          $this->render('adminView',[
              'dbData' => (new DBModel('users'))->getAll()
          ]);
@@ -21,8 +22,7 @@ class UserController extends Controller
          /** signup logic is delegated to UserModel class*/
          $message = (new UserModel())->signUp($_POST);
 
-         /** if anything wrong `$message` isn't empty */
-         /** show to user the message about mistake */
+         /** show all data from database */
          $this->render('adminView',[
              'dbData' => (new DBModel('users'))->getAll()
          ]);

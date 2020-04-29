@@ -76,8 +76,6 @@ class Router
 
         return $this->actionByDefault;
 	}
-
-
 }
 
 

@@ -22,9 +22,6 @@ class UserModel
         /** password hashing before save data */
         $postData['password'] = password_hash($postData['password'], PASSWORD_DEFAULT);
 
-        /**save data, turn on SESSION,and
-        do redirect to other app part */
         $this->db->insert($postData);
-
     }
 }
